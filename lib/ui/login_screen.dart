@@ -10,6 +10,16 @@ class LogInScreen extends StatelessWidget {
       appBar: AppBar(
         backgroundColor: Colors.transparent,
         elevation: 0,
+        automaticallyImplyLeading: false,
+        leading: IconButton(
+          onPressed: () {
+            Navigator.of(context).pop();
+          },
+          icon: Image.asset('assets/icons/ic_back.png',
+          color: AppColors.light,
+          width: 100,
+          height: 100,)
+        ),
         iconTheme: IconThemeData(
           color: AppColors.dark,
         ),
@@ -20,7 +30,7 @@ class LogInScreen extends StatelessWidget {
           Column(
             children: [
               const SizedBox(
-                height: 100,
+                height: 15,
               ),
               Center(
                   child: Image.asset(
@@ -40,7 +50,7 @@ class LogInScreen extends StatelessWidget {
                       width: double.infinity,
                       child: ElevatedButton.icon(
                         onPressed: () {
-                          //TODO: Log In Funnction here
+                          //TODO: Log In Google Funnction here
                         },
                         icon: Image.asset(
                           'assets/icons/ic_google_logo.png',
@@ -103,7 +113,7 @@ class LogInScreen extends StatelessWidget {
                       width: double.infinity,
                       child: ElevatedButton.icon(
                         onPressed: () {
-                          //TODO: Log In Funnction here
+                          //TODO: Continue with Mobile Number Funnction here
                         },
                         icon: Image.asset(
                           'assets/icons/ic_phone.png',
