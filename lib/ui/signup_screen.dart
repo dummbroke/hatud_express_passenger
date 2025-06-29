@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:hatud_express_passenger/theme/theme.dart';
 import 'package:hatud_express_passenger/ui/login_screen.dart';
+import 'package:hatud_express_passenger/ui/register_screen.dart';
 
 class SignUpScreen extends StatelessWidget {
   const SignUpScreen({super.key});
@@ -71,7 +72,12 @@ class SignUpScreen extends StatelessWidget {
                         width: double.infinity,
                         child: ElevatedButton(
                           onPressed: () {
-                            //TODO: Navigate to Log In Screen
+                            Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                  builder: (context) => const RegisterScreen()
+                              ),
+                            );
                           },
                           style: ElevatedButton.styleFrom(
                             backgroundColor: AppColors.quaternary,
