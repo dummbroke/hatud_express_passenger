@@ -19,10 +19,8 @@ class RegisterScreen extends StatelessWidget {
           icon: Image.asset('assets/icons/ic_back.png',
           color: AppColors.dark,
           ),
-        ),title: const Text(
-        'Get Started'
-      ),
-        centerTitle: true,
+        ),title: const Text('Get Started'),
+          centerTitle: true,
       ),
       backgroundColor: AppColors.light,
       body: Padding(
@@ -51,13 +49,13 @@ class RegisterScreen extends StatelessWidget {
               ),
               decoration: InputDecoration(
                 prefixIcon: Padding(
-                  padding: const EdgeInsets.only(left:8.0, right: 8.0,bottom: 3),
+                  padding: const EdgeInsets.only(left:8.0, right: 8.0,bottom: 5),
                   child: Row(
                     mainAxisSize: MainAxisSize.min,
                     children: [
                       Image.asset(
                         'assets/icons/ic_phflag.png',
-                        width: 30,
+                        width: 31,
                       ),
                       const SizedBox(width: 8),
 
