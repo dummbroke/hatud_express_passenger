@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:hatud_express_passenger/ui/sms_verification_screen.dart';
-import '../theme/theme.dart';
+import 'package:hatud_express_passenger/ui/auth/sms_verification_screen.dart';
+import '../../theme/theme.dart';
 
 class RegisterScreen extends StatelessWidget {
   const RegisterScreen({super.key});
@@ -105,7 +105,7 @@ class RegisterScreen extends StatelessWidget {
                   padding: const EdgeInsets.symmetric(vertical: 18),
                   shape: RoundedRectangleBorder(
                     borderRadius: BorderRadius.circular(24),
-                  )
+                  ),
                 ),
                 child: const Text('log In'),
               ),

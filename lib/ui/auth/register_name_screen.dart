@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:hatud_express_passenger/ui/navigation/main_screen.dart';
 
-import '../theme/theme.dart';
+import '../../theme/theme.dart';
 
 class RegisterNameScreen extends StatelessWidget {
   const RegisterNameScreen({super.key});
@@ -58,12 +59,10 @@ class RegisterNameScreen extends StatelessWidget {
             SizedBox(
               width: double.infinity,
               child: ElevatedButton(onPressed: () {
-                Navigator.push(
-                  context
-                  //MaterialPageRoute(
-                     //TODO builder: (context) => const DashboardScreen() )
-                ),
-              }, child: const Text('Continue'),
+                Navigator.of(context).pushReplacement(
+                  MaterialPageRoute(builder: (context) => MainScreen()),
+                  );
+                }, child: const Text('Continue'),
               ),
             )
           ],

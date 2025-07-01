@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:hatud_express_passenger/theme/theme.dart';
-import 'package:hatud_express_passenger/ui/login_screen.dart';
-import 'package:hatud_express_passenger/ui/register_screen.dart';
+import 'package:hatud_express_passenger/ui/auth/login_screen.dart';
+import 'package:hatud_express_passenger/ui/auth/register_screen.dart';
 
 class SignUpScreen extends StatelessWidget {
   const SignUpScreen({super.key});

@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:hatud_express_passenger/theme/theme.dart';
-import 'package:hatud_express_passenger/ui/register_name_screen.dart';
+import 'package:hatud_express_passenger/ui/auth/register_name_screen.dart';
 import 'package:pinput/pinput.dart';
 
 class SmsVerificationScreen extends StatefulWidget {
