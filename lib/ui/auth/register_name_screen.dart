@@ -62,7 +62,16 @@ class RegisterNameScreen extends StatelessWidget {
                 Navigator.of(context).pushReplacement(
                   MaterialPageRoute(builder: (context) => MainScreen()),
                   );
-                }, child: const Text('Continue'),
+                },
+                style: ElevatedButton.styleFrom(
+                  backgroundColor: AppColors.primary,
+                  foregroundColor: AppColors.light,
+                  padding: const EdgeInsets.symmetric(vertical: 18),
+                  shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.circular(24),
+                  )
+                ),
+                child: const Text('Continue'),
               ),
             )
           ],

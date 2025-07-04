@@ -113,7 +113,7 @@ class LogInScreen extends StatelessWidget {
                       width: double.infinity,
                       child: ElevatedButton.icon(
                         onPressed: () {
-                          //TODO: Continue with Mobile Number Funnction here
+                          //TODO: Continue with Mobile Number Function here
                         },
                         icon: Image.asset(
                           'assets/icons/ic_phone.png',
