@@ -30,20 +30,20 @@ class _SmsVerificationScreenState extends State<SmsVerificationScreen> {
     );
 
     return Scaffold(
-    appBar: AppBar(
-      backgroundColor: Colors.transparent,
-      elevation: 0,
-      automaticallyImplyLeading: false,
-      leading: IconButton(
-        onPressed: () {
-          Navigator.of(context).pop();
-        },
-        icon: Image.asset('assets/icons/ic_back.png',
-        color: AppColors.dark,
+      appBar: AppBar(
+        backgroundColor: Colors.transparent,
+        elevation: 0,
+        automaticallyImplyLeading: false,
+        leading: IconButton(
+          onPressed: () {
+            Navigator.of(context).pop();
+          },
+          icon: Image.asset('assets/icons/ic_back.png',
+            color: AppColors.dark,
+          ),
         ),
-      ),
-      title: const Text('Get Started'),
-      centerTitle: true,
+        title: const Text('Get Started'),
+        centerTitle: true,
       ),
       backgroundColor: AppColors.light,
       body: Padding(
@@ -54,17 +54,17 @@ class _SmsVerificationScreenState extends State<SmsVerificationScreen> {
               alignment: Alignment.center,
               child: Text(
                 'Enter the 6-digits code sent to',
-              style: TextStyle(
-              fontSize: 20,
+                style: TextStyle(
+                  fontSize: 20,
                 ),
               ),
             ),
             const SizedBox(height: 2),
             const Text(
               '+639759178173',
-            style: TextStyle(
-              fontSize: 20,
-              fontWeight: FontWeight.bold,
+              style: TextStyle(
+                fontSize: 20,
+                fontWeight: FontWeight.bold,
               ),
             ),
             const SizedBox(height: 50,),
@@ -73,20 +73,20 @@ class _SmsVerificationScreenState extends State<SmsVerificationScreen> {
               length: 6,
               defaultPinTheme: defaultPinTheme,
               onCompleted: (pin) {
-                print("Completed " + pin);
+                print("Completed $pin");
                 //TODO: verify otp
               },
             ),
             const Spacer(),
 
             const Text("Didn't get a code?",
-            style: TextStyle(
-              fontSize: 15,
-              color: AppColors.dark,),
+              style: TextStyle(
+                fontSize: 15,
+                color: AppColors.dark,),
             ),
             const SizedBox(height: 10),
             SizedBox(
-              width: double.infinity,
+                width: double.infinity,
                 child: ElevatedButton(
                   onPressed: () {
                     Navigator.push(context,
@@ -95,12 +95,12 @@ class _SmsVerificationScreenState extends State<SmsVerificationScreen> {
                     );
                   },
                   style: ElevatedButton.styleFrom(
-                    backgroundColor: AppColors.primary,
-                    foregroundColor: AppColors.light,
-                    padding: const EdgeInsets.symmetric(vertical: 18),
-                    shape: RoundedRectangleBorder(
-                      borderRadius: BorderRadius.circular(24),
-                    )
+                      backgroundColor: AppColors.primary,
+                      foregroundColor: AppColors.light,
+                      padding: const EdgeInsets.symmetric(vertical: 18),
+                      shape: RoundedRectangleBorder(
+                        borderRadius: BorderRadius.circular(24),
+                      )
                   ),
                   child: const Text('Proceed'),
                 )

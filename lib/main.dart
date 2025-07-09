@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:hatud_express_passenger/theme/theme.dart';
-import 'package:hatud_express_passenger/ui/navigation/dashboard_screen.dart';
 import 'ui/auth/signup_screen.dart';
 
 void main() => runApp(const MyApp());

@@ -1,6 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:hatud_express_passenger/ui/dashboard/hatud_screen.dart';
+import 'package:hatud_express_passenger/ui/dashboard/sugo_screen.dart';
 
 import '../../theme/theme.dart';
+import '../dashboard/tour_screen.dart';
 
 class DashboardScreen extends StatelessWidget {
   const DashboardScreen({super.key});
@@ -84,11 +87,13 @@ class DashboardScreen extends StatelessWidget {
                             title:'PaHATUD',
                             subtitle:'Book a ride',
                             onTap: () {
-                              //TODO: Navigate to the next screen
+                              Navigator.push(context,
+                                MaterialPageRoute(builder: (context) => const HatudScreen(),
+                                ),
+                              );
                             },
                           ),
                         ),
-
                         const SizedBox(width: 12),
                         Expanded(
                             child: _ServiceCard(
@@ -96,7 +101,10 @@ class DashboardScreen extends StatelessWidget {
                               title:'PaSUGO',
                               subtitle:'Run an errand',
                               onTap: () {
-                                // TODO: Navigate to the next screen
+                                Navigator.push(context,
+                                  MaterialPageRoute(builder: (context) => const SugoScreen(),
+                                  ),
+                                );
                             },
                           ),
                         ),
@@ -111,6 +119,10 @@ class DashboardScreen extends StatelessWidget {
                                 title: 'PaTOUR',
                                 subtitle: 'Book a tour guide',
                                 onTap:() {
+                                  Navigator.push(context,
+                                    MaterialPageRoute(builder: (context) => const TourScreen(),
+                                    ),
+                                  );
                           },
                          ),
                         ),
